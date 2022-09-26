@@ -1,0 +1,51 @@
+from tkinter import *
+
+def tela2():
+    tl2=Toplevel()
+    tl2.title('9 dedos')
+    tl2.geometry('250x400')
+    tl2.configure(background="red")
+    botaoretro=Button(tl2, text='fechar', command=tl2.destroy)
+    botaoretro.pack()
+
+    lulab=PhotoImage(file="imagens\\632ced0a13345.png")
+    lulabombado=Label(tl2,image=lulab)
+    lulabombado.pack()
+
+    tl2.mainloop()
+
+def tela3():
+    tl3=Toplevel()
+    tl3.title('imbrochavel')
+    tl3.geometry('250x400+150+200')
+    tl3.configure(background='green')
+
+    botaoretro=Button(tl3, text='fechar', command=tl3.destroy)
+    botaoretro.pack()
+
+    """bolsogif=PhotoImage(file="imagens\\bolsonario_150x200.png")
+    bolsogifimage=Label(tl3, image=bolsogif)
+    bolsogifimage.pack()"""
+
+    bolsogifb=PhotoImage(file="imagens\Bbombado_250x400.png")
+    bolsogifimageb=Label(tl3, image=bolsogifb)
+    bolsogifimageb.pack()
+
+    tl3.mainloop()
+
+mu=Tk()
+mu.geometry('250x400')
+
+mu.configure(background='blue')
+mu.title('rinha de ladrão')
+
+btn=Button(text='Lula ladrão roubou meu coração', command=tela2, background='red')
+btn.pack()
+
+btn2=Button(text='17 na urna 38 na cintura', command=tela3, background='green')
+btn2.pack()
+
+fundo=PhotoImage(file="imagens\\kkkbrasil.png")
+fundobr=Label(image=fundo)
+fundobr.pack()
+mu.mainloop()
